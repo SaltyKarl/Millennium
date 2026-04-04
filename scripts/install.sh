@@ -35,7 +35,7 @@ readonly RELEASES_URI="https://api.github.com/repos/${GITHUB_ACCOUNT}/releases"
 readonly DOWNLOAD_URI="https://github.com/${GITHUB_ACCOUNT}/releases/download"
 readonly INSTALL_DIR="/tmp/millennium"
 DRY_RUN=0
-ALLOW_BETA=0
+ALLOW_BETA=1
 
 log() { printf "%b\n" "$1"; }
 is_root() { [ "$(id -u)" -eq 0 ]; }
